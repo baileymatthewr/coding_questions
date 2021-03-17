@@ -1,6 +1,13 @@
 # What is a For-Loop?
 
 ## Potential Languages
+* For this assignment you must use a language with a concept of a for-loop with
+3 arguments of the following form:
+```
+for(<declaration/initialization>; <stopping_condition>; <increment>){
+    //do something
+}
+```
 * This list is in no particular order. They are simply languages that will work
 properly with this set of questions.
 1. C
@@ -13,14 +20,12 @@ properly with this set of questions.
 8. PHP
 
 ## Objecttive 1
-Write a for-loop that prints out the numbers 1 through 5. Choose a language
-with a concept of a for-loop with 3 arguments of the following form:
-```
-for(<declaration/initialization>; <stopping_condition>; <increment>){
-    //do something
-}
+Write a for-loop that prints out the numbers 1 through 5.
 
-```
+### Questions
+1. Does it theoretically work?
+2. Can you explain how it works?
+3. When you run it, does it work the way you say?
 
 ## Objective 2
 Write the same process from Objective 1 with a while-loop instead of a for-loop
