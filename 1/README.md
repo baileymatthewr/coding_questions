@@ -14,10 +14,22 @@ properly with this set of questions.
 2. C++
 3. C#
 4. D
-5. Go (Golang if you prefer)
-6. Java
-7. JavaScript
-8. PHP
+5. Java
+6. JavaScript
+7. PHP
+* Languages that will not work with this:
+1. Go (Golang, if you prefer)
+    * distinction between statements and expressions make preincrement and
+    postincrement not a thing. i++ looks like postincrement, but according to
+    Golang experts, it is simply "increment by 1". There is no concept of the
+    preincrement or postincrement expressions.
+2. Python
+    * for-loops can be range-based, but but the for-loop in Python is really a
+    foreach loop. Also preincrement and postincrement operators are not part of
+    the language.
+3. Ruby
+    * Preincrement and postincrement operators are not part of the language.
+
 
 ## Objecttive 1
 Write a for-loop that prints out the numbers 1 through 5.
@@ -36,7 +48,7 @@ Write the same process from Objective 1 with a while-loop instead of a for-loop
 3. Where does the increment occur?
 
 ## Objective 3
-Write a pre-increment, rather than a post-increment in the 3rd parameter of the
+Write a preincrement, rather than a postincrement in the 3rd parameter of the
 for-loop you wrote in Objective 1.
 
 ### Questions
