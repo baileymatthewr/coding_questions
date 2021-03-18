@@ -7,7 +7,7 @@ devised or have heard and enjoy.
 * The questions aren't necessarily difficult, but they show how a person goes
 about solving the problem.
 * Some questions need a bit of background information either before or after
-the question. I will do my best to list these prerequisits and postrequisits
+the question. I will do my best to list these preconditions and postconditions
 with each question.
 * There is a practical value to going through these problems, even if there is
 no immediate application.
