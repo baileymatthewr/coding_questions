@@ -29,7 +29,12 @@ properly with this set of questions.
     the language.
 3. Ruby
     * Preincrement and postincrement operators are not part of the language.
-
+4. ML / SML
+    * This is a functional language (the use of recursion is preferred over
+    loops and even then the for-loop doesn't exist in this form)
+5. Matlab / Octave
+    * This language doesn't have this concept of a for-loop or the notion of
+    preincrement and postincrement
 
 ## Objecttive 1
 Write a for-loop that prints out the numbers 1 through 5.
