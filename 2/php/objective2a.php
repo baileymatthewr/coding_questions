@@ -20,18 +20,14 @@ function fib2helper($x, $y, $z){
     return fib2helper($y, $y+$x, $z-1);
 }
 
-$start = microtime(true);
-for($i = 0; $i < 20; ++$i)
-    echo fib1($i)."\n";
-$end = microtime(true);
-$diff = $end - $start;
-echo "Elapsed time: $diff\n";
+$functions = ['fib1', 'fib2'];
 
-$start = microtime(true);
-for($i = 0; $i < 20; ++$i)
-    echo fib2($i)."\n";
-$end = microtime(true);
-$diff = $end - $start;
-echo "Elapsed time: $diff\n";
-
+foreach($functions as $func){
+    $start = microtime(true);
+    for($i = 0; $i < 40; ++$i)
+        echo $func($i)."\n";
+    $end = microtime(true);
+    $diff = $end - $start;
+    echo "$func: Elapsed time: $diff\n";
+}
 

@@ -41,25 +41,18 @@ function fib_it($z){
 }
 
 
-$start = microtime(true);
-for($i = 0; $i < 30; ++$i)
-    echo fib1($i)."\n";
-$end = microtime(true);
-$diff = $end - $start;
-echo "Fib1: Elapsed time: $diff\n";
+$functions = ['fib1', 'fib2', 'fib_it'];
 
-$start = microtime(true);
-for($i = 0; $i < 30; ++$i)
-    echo fib2($i)."\n";
-$end = microtime(true);
-$diff = $end - $start;
-echo "Fib2: Elapsed time: $diff\n";
-
-$start = microtime(true);
-for($i = 0; $i < 30; ++$i)
-    echo fib_it($i)."\n";
-$end = microtime(true);
-$diff = $end - $start;
-echo "Fib_it: Elapsed time: $diff\n";
+foreach($functions as $func){
+    $start = microtime(true);
+    for($i = 0; $i < 40; ++$i)
+        echo $func($i)."\n";
+    $end = microtime(true);
+    $diff = $end - $start;
+    echo "$func: Elapsed time: $diff\n";
+}
 
 
+/*
+
+*/
