@@ -1,6 +1,7 @@
-#include <stdio.h>
-#include <time.h>
-#include <string.h>
+#include <iostream>
+#include <chrono>
+using std::cout;
+using std::endl;
 
 int fib1(int);
 int fib2(int);
@@ -41,23 +42,23 @@ int fib3(int z){
 }
 
 int main(int argc, char* argv[]){
-    clock_t timer = clock();
+    std::chrono::steady_clock::time_point timer = std::chrono::steady_clock::now();
     for(int i = 0; i < 40; ++i)
-        printf("%d\n", fib1(i));
-    timer = clock() - timer;
-    printf("fib1 elapsed time: %f\n", (double)timer);
+        cout << fib1(i) << endl;
+    timer = std::chrono::steady_clock::now() - timer;
+    cout << "fib1 elapsed time: " << timer << endl;
 
-    timer = clock();
+    timer = std::chrono::steady_clock::now();
     for(int i = 0; i < 40; ++i)
-        printf("%d\n", fib2(i));
-    timer = clock() - timer;
-    printf("fib2 elapsed time: %f\n", (double)timer);
+        cout << fib2(i) << endl;
+    timer = std::chrono::steady_clock::now() - timer;
+    cout << "fib2 elapsed time: " << timer << endl;
 
-    timer = clock();
+    timer = std::chrono::steady_clock::now();
     for(int i = 0; i < 40; ++i)
-        printf("%d\n", fib3(i));
-    timer = clock() - timer;
-    printf("fib3 elapsed time: %f\n", (double)timer);
+        cout << fib3(i) << endl;
+    timer = std::chrono::steady_clock::now() - timer;
+    cout << "fib3 elapsed time: " << timer << endl;
 
     return 0;
 }
