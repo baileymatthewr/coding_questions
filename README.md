@@ -9,8 +9,8 @@ about solving the problem.
 * Some questions need a bit of background information either before or after
 the question. I will do my best to list these preconditions and postconditions
 with each question.
-* There is a practical value to going through these problems, even if there is
-no immediate application.
+* There is value to going through these problems, even if there is no
+immediate application.
 
 ### What if something is wrong?
 * I am a very adaptable person. If you find something that is wrong, send me a
