@@ -5,17 +5,17 @@ namespace objective1 {
         static void Main(){
             int x = 0, y = 0;
 
-            Console.WriteLine("Test 1a: Check how x++ works by itself");
+            Console.WriteLine("Test 1a: Check how ++x works by itself");
             x = 1;
             Console.WriteLine("x = {0}", x);
-            x++;
+            ++x;
             Console.WriteLine("x = {0}", x);
 
 
-            Console.WriteLine("Test 1b: Make postIncrement(x) match x++");
+            Console.WriteLine("Test 1b: Make preIncrement(x) match ++x");
             x = 1;
             Console.WriteLine("x = {0}", x);
-            postIncrement(ref x);
+            preIncrement(ref x);
             Console.WriteLine("x = {0}", x);
 
 
@@ -24,21 +24,20 @@ namespace objective1 {
             );
             Console.WriteLine("y = x++");
             x = 1;
-            y = x++;
+            y = ++x;
             Console.WriteLine("y = {0}", y);
             Console.WriteLine("x = {0}", x);
 
-            Console.WriteLine("y = postIncrement(x)");
+            Console.WriteLine("y = preIncrement(x)");
             x = 1;
-            y = postIncrement(ref x);
+            y = preIncrement(ref x);
             Console.WriteLine("y = {0}", y);
             Console.WriteLine("x = {0}", x);
         }
 
-        static int postIncrement(ref int x){
-            int tmp = x;
+        static int preIncrement(ref int x){
             x += 1;
-            return tmp;
+            return x;
         }
     }
 }
