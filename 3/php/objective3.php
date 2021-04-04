@@ -15,7 +15,8 @@ function theTime(){
     return round(microtime(true) * 1000);
 }
 
-echo "Intuitively, pre-increment seems faster because it's one less step.\n";
+echo "Intuitively, pre-increment seems faster than post-increment because" .
+" it's one less step.\n";
 
 $TIMES = 10000000;
 
@@ -26,7 +27,7 @@ $time = theTime();
 for($i = 0; $i < $TIMES; ++$i)
     preIncrement($x);
 $time = theTime() - $time;
-echo "Elapsed Time: preIncrement() $time\n";
+echo "Elapsed Time: $time\n";
 
 
 echo "Test 2: ++x $TIMES times";
@@ -35,7 +36,7 @@ $time = theTime();
 for($i = 0; $i < $TIMES; ++$i)
     ++$x;
 $time = theTime() - $time;
-echo "Elapsed Time: ++x $time\n";
+echo "Elapsed Time: $time\n";
 
 
 echo "Test 3: post-increment $TIMES times";
@@ -44,7 +45,7 @@ $time = theTime();
 for($i = 0; $i < $TIMES; ++$i)
     postIncrement($x);
 $time = theTime() - $time;
-echo "Elapsed Time: postIncrement() $time\n";
+echo "Elapsed Time: $time\n";
 
 
 echo "Test 4: x++ $TIMES times";
@@ -53,12 +54,6 @@ $time = theTime();
 for($i = 0; $i < $TIMES; ++$i)
     $x++;
 $time = theTime() - $time;
-echo "Elapsed Time: x++ $time\n";
-
-
-
-
-
-
+echo "Elapsed Time: $time\n";
 
 
