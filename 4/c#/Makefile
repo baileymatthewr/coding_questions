@@ -1,5 +1,5 @@
 gnu1:
-	mcs -out:program "./reverse.cs"
+	mcs -unsafe -out:program "./reverse.cs"
 run:
 	mono program
 clean:
