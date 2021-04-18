@@ -6,7 +6,7 @@
 forced into a specific language.
 
 ## Joel's Short Programming Questions
-* Reverse a string in place
+* Reverse a string in place - Done as Coding Question 4
 * Reverse a linked list
 * Count all the bits that are on in a byte
 * Binary Search
