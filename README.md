@@ -23,3 +23,24 @@ repository to prove how awesome you are.
 * **THE BOTTOM LINE** - I think anyone could benefit from taking the time with
 this repository and working through the problems, even if they don't
 particularly enjoy them.
+
+### Installing the languages on your machine
+
+#### C#
+
+You can install C# on nearly any operating system now. The following website
+will allow you to get the version necessary for your environment.
+https://www.mono-project.com/download/stable/
+
+You still will need the Windows download even if you plan to use it through
+WSL.
+
+For WSL, you also need to follow these steps to get it properly installed:
+https://github.com/mono/website/issues/199
+
+#### D
+
+You can install D on nearly any operating system. The following website will
+allow you get the version necessary for your environment.
+https://dlang.org/download.html#dmd
+
